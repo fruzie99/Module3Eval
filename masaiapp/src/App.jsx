@@ -6,10 +6,12 @@ import AdminDashboard from "./pages/AdminDashboard";
 import CustomerDashboard from "./pages/CustomerDashboard";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import UpdateRestaurant from "./pages/UpdateRestaurant";
-
+ 
 
 export default function App(){
   return(
+    
+    console.log("hello"),
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Login />} />
