@@ -12,8 +12,7 @@ export default function RestaurantCard({r,isAdmin,refresh}){
 
     return (
         <div>
-            <h4>{r.restaurantName}
-            </h4>
+            <h4>{r.restaurantName}</h4>
             <p>{r.type}</p>
             {isAdmin && (<>
             <button onClick={()=>navigate(`/admin/restaurants/update/${r.restaurant.ID}`)}>

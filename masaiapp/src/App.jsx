@@ -9,9 +9,10 @@ import UpdateRestaurant from "./pages/UpdateRestaurant";
  
 
 export default function App(){
+  // console.log("hello");
   return(
     
-    console.log("hello"),
+    
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Login />} />

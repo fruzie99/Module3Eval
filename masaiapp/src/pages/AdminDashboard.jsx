@@ -11,9 +11,9 @@ export default function AdminDashboard(){
 return (
     <div>
         <h1>Admin Dashboard</h1>
-        <AddRestaurant refresth={refresth} />
+        <AddRestaurant refresh={refresh} />
         {data.map((r) => (
-            <RestaurantCard key={r.restaurantID}  r={r} isAdmin refresth={refresth} AdminDashboard/>
+            <RestaurantCard key={r.restaurantID}  r={r} isAdmin refresth={refresh} AdminDashboard/>
         ))}
     </div>
 );
