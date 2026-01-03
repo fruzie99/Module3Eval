@@ -8,8 +8,7 @@ export default function Navbar({
     setFilterType,
     filterParking,
     setFilterParking,
-}) 
-{
+}) {
     const {logout} = useContext(AuthContext);
     
     const inputRef=useRef();
@@ -17,11 +16,16 @@ export default function Navbar({
     useEffect(()=>inputRef.current.focus(),[]);
     return (
 <div style={{padding :10,borderBottom:"1px solid gray"}}>
-    {*Search*}
-    <input ref={inputRef} placeholder="Search name/address"
-    value="search"
+    {/*Search*/}
+    <input 
+    ref={inputRef} 
+    placeholder="Search name/address"
+    value={search}
     onChange={(e) => setSearch(e.target.value)}
-    >
+    />
+       
+        {/*Cuisine Filter*/}
+        <select value={filterType} onChange={(e) => setFilterType(e.target.value)}>
         <option value="">All</option>
         <option value="Rajasthani">Rajasthani</option>
         <option value="Gujarathi">Gujarathi</option>
@@ -29,7 +33,6 @@ export default function Navbar({
         <option value="North Indian">North Indian</option>
         <option value="South Indian">South Indian</option>
         <option value="Thai">Thai</option>
-
         </select>
 
         {/*Parking Filter*/}
