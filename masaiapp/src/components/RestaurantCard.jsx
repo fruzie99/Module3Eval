@@ -9,7 +9,6 @@ export default function RestaurantCard({r,isAdmin,refresh}){
         saveData(data);
         refresh();
     }
-    }
 
     return (
         <div>
@@ -25,4 +24,7 @@ export default function RestaurantCard({r,isAdmin,refresh}){
         )}
         </div>
     );
+    }
+
+    
     

@@ -4,7 +4,6 @@ import { BrowserRouter
 import Login from "./pages/Login";
 import AdminDashboard from "./pages/AdminDashboard";
 import CustomerDashboard from "./pages/CustomerDashboard";
-import { AuthProvider } from "./context/AuthContext";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import UpdateRestaurant from "./pages/UpdateRestaurant";
 
@@ -25,7 +24,7 @@ export default function App(){
       <Route path="/update/:id" element={<ProtectedRoute role="admin"><UpdateRestaurant /></ProtectedRoute>} />
 
 
-      
+
     </Routes>
     </BrowserRouter>
   )

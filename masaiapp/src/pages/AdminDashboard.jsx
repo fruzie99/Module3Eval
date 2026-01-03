@@ -6,10 +6,7 @@ import AddRestaurant from "../components/AddRestaurant";
 export default function AdminDashboard(){
     const [data,setData] = useState(getData());
     const refresth=()=>setData(getData());
-
-}
-
-useEffect(refresth,[]);
+    useEffect(refresth,[]);
 
 return (
     <div>
@@ -20,3 +17,7 @@ return (
         ))}
     </div>
 );
+
+
+}
+
